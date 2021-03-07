@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/logo.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -18,14 +19,14 @@
         <h1>BHROMAON</h1>
         <h2>Safe Travels Everywhere</h2>
         <form class="hero-section_form">
-          <input type="text" class="hero-section_container__search-box" placeholder="Search Your Travel Destination">
-          <button class="hero_search-button">SEARCH <img src="assets/search.svg" alt="search"></button>
+          <input type="text" class="hero-section_container__search-box" placeholder="Search Your Travel Destination" required>
+          <button class="hero_search-button">SEARCH<img src="assets/search.svg" alt="search"></button>
         </form>
         <div>
-          <a href="#tourist">
+          <button class="scroll-down-btn" onClick="scrollSmoothToBottom()">
             <p>Scroll Down</p>
             <img src="assets/scroll.svg" alt="scroll">
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -55,7 +56,7 @@
             <a href="#">Explore Places</a>
           </div>
           <div class="features-section_container__box--right">
-            <div>
+            <div class="features-section_container__box--right_pictures">
               <img src="assets/why-us-picture1.png" alt="picture1">
               <img src="assets/why-us-picture2.png" alt="picture2">
             </div>
@@ -149,5 +150,16 @@
       </div>
     </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    scrollingElement = (document.scrollingElement || document.body)
+    //Require jQuery
+    function scrollSmoothToBottom (id) {
+      $(scrollingElement).animate({
+          scrollTop: document.body.scrollHeight
+      }, 500);
+    }
+  </script>
 </body>
 </html>

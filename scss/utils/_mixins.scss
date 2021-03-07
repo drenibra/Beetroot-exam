@@ -18,5 +18,5 @@
 @mixin big-tablet {
   @media (min-width: 991px) and (max-width: 1024px){
       @content;
-}
+  }
 }
