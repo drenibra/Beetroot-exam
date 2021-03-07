@@ -260,37 +260,69 @@ nav .container ul li:not(:first-of-type) {
 .features-section_container__box--right img:last-of-type {
   float: right;
 }
-.features-section__places {
+
+.places-section {
   background: #333333;
   height: 340px;
 }
-.features-section__places-divs {
+.places-section__divs {
+  padding-top: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.features-section__places-divs h2 {
+.places-section__divs h2 {
   font-family: "Aleo";
   font-size: 36px;
   text-align: center;
   color: #E8E8E8;
 }
-.features-section__places-divs img:first-of-type {
+.places-section__divs img:first-of-type {
+  z-index: 2;
   width: 60px;
   height: auto;
 }
-.features-section__places-divs img:nth-child(2) {
+.places-section__divs img:nth-child(2) {
   width: 62px;
   height: auto;
 }
-.features-section__places-divs img:last-of-type {
+.places-section__divs img:last-of-type {
   width: 64px;
   height: auto;
 }
-.features-section__places-divs div {
+.places-section__divs div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.features-section__places-divs div h2 {
+.places-section__divs div h2 {
   padding-top: 38px;
+}
+.places-section .svg-line {
+  z-index: 3;
+  width: 873px;
+  position: relative;
+  text-align: center;
+  bottom: 280px;
+  left: 86px;
+  z-index: 0;
+}
+.places-section .circle {
+  position: relative;
+  bottom: 150px;
+  z-index: 1;
+  background-color: #333333;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.pictures-section_first {
+  background-image: url("../../assets/house.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+.pictures-section_first__box {
+  width: 543;
 }
