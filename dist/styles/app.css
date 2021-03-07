@@ -175,3 +175,122 @@ a {
   width: 22px;
   height: auto;
 }
+
+nav {
+  background-color: #5474FD;
+  height: 83px;
+}
+
+nav .container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .container .navbar-logo {
+  font-size: 24px;
+  color: white;
+}
+nav .container ul {
+  font-size: 14px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 186%;
+  text-transform: uppercase;
+  display: flex;
+}
+nav .container ul a {
+  color: white;
+}
+nav .container ul li:not(:first-of-type) {
+  padding-left: 20px;
+}
+
+.features-section {
+  background-image: url("../../assets/why-choose-us.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 685px;
+}
+.features-section_container {
+  margin-bottom: 115px;
+  display: flex;
+  justify-content: space-between;
+}
+.features-section_container__box--left {
+  width: 53%;
+  margin-top: 211px;
+}
+.features-section_container__box--left h1 {
+  font-family: "Aleo";
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+}
+.features-section_container__box--left p {
+  padding-top: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 1.6px;
+  color: #E8E8E8;
+}
+.features-section_container__box--left a {
+  margin-top: 45px;
+  width: 228px;
+  height: 63px;
+  background: #5474FD;
+  font-family: "Aleo";
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.features-section_container__box--right {
+  margin-top: 117px;
+  display: flex;
+  width: 42%;
+}
+.features-section_container__box--right img:last-of-type {
+  float: right;
+}
+.features-section__places {
+  background: #333333;
+  height: 340px;
+}
+.features-section__places-divs {
+  display: flex;
+  justify-content: space-around;
+}
+.features-section__places-divs h2 {
+  font-family: "Aleo";
+  font-size: 36px;
+  text-align: center;
+  color: #E8E8E8;
+}
+.features-section__places-divs img:first-of-type {
+  width: 60px;
+  height: auto;
+}
+.features-section__places-divs img:nth-child(2) {
+  width: 62px;
+  height: auto;
+}
+.features-section__places-divs img:last-of-type {
+  width: 64px;
+  height: auto;
+}
+.features-section__places-divs div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features-section__places-divs div h2 {
+  padding-top: 38px;
+}

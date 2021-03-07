@@ -1,0 +1,90 @@
+//FEATURES SECTION
+
+.features-section {
+    background-image: url("../../assets/why-choose-us.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 685px;
+    &_container {
+      margin-bottom: 115px;
+      display: flex;
+      justify-content: space-between;
+      &__box--left {
+        width: 53%;
+        margin-top: 211px;
+        h1 {
+          font-family: $aleo;
+          color: white;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 36px;
+        }
+        p {
+          padding-top: 50px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 162%;
+          letter-spacing: 1.6px;
+          color: #E8E8E8;
+        }
+        a {
+          margin-top: 45px;
+          width: 228px;
+          height: 63px;
+          background: $blue;
+          font-family: $aleo;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          letter-spacing: 1.2px;
+          text-transform: uppercase;
+          color: #FFFFFF;
+        }
+      }
+      &__box--right {
+        margin-top: 117px;
+        display: flex;
+        width: 42%;
+        img:last-of-type {
+          float:right;
+        }
+      }
+    }
+    &__places {
+      background: #333333;
+      height: 340px;
+      &-divs {
+        display: flex;
+        justify-content: space-around;
+        h2 {
+          font-family: $aleo;
+          font-size: 36px;
+          text-align: center;
+          color: #E8E8E8;
+        }
+        img:first-of-type {
+          width: 60px;
+          height: auto;
+        }
+        img:nth-child(2) {
+          width: 62px;
+          height: auto;
+        }
+        img:last-of-type {
+          width: 64px;
+          height: auto;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h2 {
+            padding-top: 38px;
+          }
+        }
+      }
+    }
+}
