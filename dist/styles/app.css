@@ -313,87 +313,30 @@ nav .container ul li:not(:first-of-type) {
   border-radius: 50%;
 }
 
-.pictures-section_first {
-  display: flex;
-  background-image: url("../../assets/house.png");
+.pictures-section > div {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.pictures-section_first__box {
-  position: relative;
-  padding: 49px 38px 49px 30px;
-  margin: 130px 0 100px;
-  width: 50%;
-  background: rgba(22, 22, 22, 0.808);
-}
-.pictures-section_first__box h3 {
-  font-size: 20px;
-  font-weight: normal;
-  letter-spacing: 1.5px;
-  color: #E8E8E8;
-}
-.pictures-section_first__box h2 {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #E8E8E8;
-  padding-top: 28px;
-}
-.pictures-section_first__box p {
-  font-size: 16px;
-  color: #E8E8E8;
-  line-height: 162%;
-  padding-top: 18px;
-  padding-bottom: 46px;
-}
-.pictures-section_first__box-button {
-  font-family: "Aleo";
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 228px;
-  height: 63px;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 1.2px;
-  font-size: 16px;
-  background: #5474FD;
+}
+.pictures-section_first {
+  background-image: url("../../assets/house.png");
 }
 .pictures-section_second {
-  display: flex;
   background-image: url("../../assets/mountain.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-.pictures-section_second__box {
+.pictures-section_second .section-box {
+  position: relative;
+  float: right;
+}
+.pictures-section .section-box {
   position: relative;
   padding: 49px 38px 49px 30px;
   margin: 130px 0 100px;
   width: 50%;
   background: rgba(22, 22, 22, 0.808);
-  float: right;
 }
-.pictures-section_second__box h3 {
-  font-size: 20px;
-  font-weight: normal;
-  letter-spacing: 1.5px;
-  color: #E8E8E8;
-}
-.pictures-section_second__box h2 {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #E8E8E8;
-  padding-top: 28px;
-}
-.pictures-section_second__box p {
-  font-size: 16px;
-  color: #E8E8E8;
-  line-height: 162%;
-  padding-top: 18px;
-  padding-bottom: 46px;
-}
-.pictures-section_second__box-button {
+.pictures-section .section-box__button {
   font-family: "Aleo";
   display: flex;
   align-items: center;
@@ -405,6 +348,37 @@ nav .container ul li:not(:first-of-type) {
   letter-spacing: 1.2px;
   font-size: 16px;
   background: #5474FD;
+}
+@media (max-width: 990px) {
+  .pictures-section .section-box__button {
+    margin: auto;
+  }
+}
+.pictures-section .section-box h3 {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  color: #E8E8E8;
+}
+.pictures-section .section-box h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #E8E8E8;
+  padding-top: 28px;
+}
+.pictures-section .section-box p {
+  font-size: 16px;
+  color: #E8E8E8;
+  line-height: 162%;
+  padding-top: 18px;
+  padding-bottom: 46px;
+}
+@media (max-width: 990px) {
+  .pictures-section .section-box {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
 }
 
 .tourist_review-section {
@@ -489,7 +463,12 @@ footer .footer-container h3 {
   color: #FFFFFF;
 }
 footer .footer-container_scmedia {
-  width: 15%;
   display: flex;
   justify-content: space-around;
+}
+footer .footer-container_scmedia a {
+  padding: 10px;
+}
+footer .footer-container_scmedia a:not(:last-of-type) {
+  margin-right: 15px;
 }

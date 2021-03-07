@@ -25,9 +25,17 @@ footer {
       color: #FFFFFF;
     }
     &_scmedia {
-      width: 15%;
+      // width: 15%;
       display: flex;
       justify-content: space-around;
+
+      a {
+        padding: 10px;
+        
+        &:not(:last-of-type) {
+          margin-right: 15px;
+        }
+      }
     }
   }
 }

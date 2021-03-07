@@ -104,107 +104,76 @@
 }
 
 .pictures-section {
-  &_first {
-    display: flex;
-    background-image: url("../../assets/house.png");
+  & > div {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    // height: 700px;
-    &__box {
-      position: relative;
-      // right: 270px;
-      // top: 70px;
-      padding: 49px 38px 49px 30px;
-      margin: 130px 0 100px;
-      // width: 543px;
-      // height: 374px;
-      width: 50%;
-      background: rgba(22, 22, 22, 0.808);
-      h3 {
-        font-size: 20px;
-        font-weight: normal;
-        letter-spacing: 1.5px;
-        color: $paleWhite;
-      }
-      h2 {
-        font-size: 20px;
-        text-transform: uppercase;
-        color: $paleWhite;
-        padding-top: 28px;
-      }
-      p {
-        font-size: 16px;
-        color: $paleWhite;
-        line-height: 162%;
-        padding-top: 18px;
-        padding-bottom: 46px;
-      }
-      &-button {
-        font-family: $aleo;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 228px;
-        height: 63px;
-        text-transform: uppercase;
-        color: white;
-        letter-spacing: 1.2px;
-        font-size: 16px;
-        background: $blue;
-      }
-    }
+    display: flex;
+  }
+
+  &_first {
+    background-image: url("../../assets/house.png");
+
   }
   &_second {
-    display: flex;
     background-image: url("../../assets/mountain.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    // height: 700px;
-    &__box {
+    .section-box {
       position: relative;
-      // left: 270px;
-      // top: 70px;
-      padding: 49px 38px 49px 30px;
-      margin: 130px 0 100px;
-      // width: 543px;
-      // height: 374px;
-      width: 50%;
-      background: rgba(22, 22, 22, 0.808);
       float: right;
-      h3 {
-        font-size: 20px;
-        font-weight: normal;
-        letter-spacing: 1.5px;
-        color: $paleWhite;
+    }
+  }
+
+  .section-box {
+    position: relative;
+    padding: 49px 38px 49px 30px;
+    margin: 130px 0 100px;
+    width: 50%;
+    background: rgba(22, 22, 22, 0.808);
+
+    &__button {
+      font-family: $aleo;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 228px;
+      height: 63px;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 1.2px;
+      font-size: 16px;
+      background: $blue;
+
+      @include max-small-tablet {
+        margin: auto;
       }
-      h2 {
-        font-size: 20px;
-        text-transform: uppercase;
-        color: $paleWhite;
-        padding-top: 28px;
-      }
-      p {
-        font-size: 16px;
-        color: $paleWhite;
-        line-height: 162%;
-        padding-top: 18px;
-        padding-bottom: 46px;
-      }
-      &-button {
-        font-family: $aleo;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 228px;
-        height: 63px;
-        text-transform: uppercase;
-        color: white;
-        letter-spacing: 1.2px;
-        font-size: 16px;
-        background: $blue;
-      }
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: normal;
+      letter-spacing: 1.5px;
+      color: $paleWhite;
+    }
+    
+    h2 {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $paleWhite;
+      padding-top: 28px;
+    }
+
+    p {
+      font-size: 16px;
+      color: $paleWhite;
+      line-height: 162%;
+      padding-top: 18px;
+      padding-bottom: 46px;
+    }
+
+    @include max-small-tablet {
+      width: 100%;
+      text-align: center;
+      margin: auto;
     }
   }
 }
