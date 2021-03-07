@@ -1,0 +1,61 @@
+body {
+  font-family: $josefin;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1110px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+}
+
+.hero-section {
+  background-image: url("../../assets/hero-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 820px;
+  display: flex;
+  justify-content: center;
+  &_container {
+    position: relative;
+    margin: auto;
+    max-width: 1110px;
+    text-align: center;
+    div:last-of-type {
+      a {
+        color: white;
+      }
+      padding-top: 107px;
+    }
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      letter-spacing: 4.8px;
+      color: white;
+    }
+    h2 {
+      padding-top: 11px;
+      padding-bottom: 48px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      font-size: 22px;
+      letter-spacing: 6.82px;
+      color: white;
+    }
+    &__search-box {
+      width: 653px;
+      height: 63px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
